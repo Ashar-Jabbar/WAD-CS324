@@ -1,18 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAD-324</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WAD-CS324 | My Assignments</title>
+  <style>
+    :root {
+      --maroon: #6d1a2b;
+      --maroon-dark: #4e1220;
+      --beige: #f3ead8;
+      --beige-card: #fbf6ea;
+      --text: #3b2a2a;
+      --muted: #7a6560;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--beige);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: var(--maroon);
+      color: var(--beige);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 8px; }
+    header p { font-size: 1.05rem; opacity: 0.9; }
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    main h2 { color: var(--maroon); font-size: 1.8rem; margin-bottom: 24px; }
+    .card {
+      background: var(--beige-card);
+      border: 1px solid #e3d5b8;
+      border-radius: 10px;
+      padding: 24px;
+      max-width: 420px;
+      box-shadow: 0 2px 8px rgba(78, 18, 32, 0.12);
+    }
+    .tag { font-size: 0.8rem; font-weight: 600; color: var(--maroon); }
+    .card h3 { font-size: 1.4rem; margin: 10px 0; color: var(--maroon-dark); }
+    .card p { color: var(--muted); margin-bottom: 18px; }
+    .btn {
+      display: inline-block;
+      background: var(--maroon);
+      color: var(--beige);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .btn:hover, .btn:focus-visible { background: var(--maroon-dark); }
+    .btn:focus-visible { outline: 3px solid #c9a24b; outline-offset: 2px; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>WAD-324</h1>
-    <div>
-        <div>
-            <h2>Task 1</h2>
-            <p>Task 1 description goes here.</p>
-        </div>
-    </div>
+  <header>
+    <h1>WAD-CS324</h1>
+    <p>Web Application Development</p>
+  </header>
 
+  <main>
+    <h2>My Assignments</h2>
+    <div class="card">
+      <span class="tag">ASSIGNMENT 02</span>
+      <h3>VISION</h3>
+      <p>Your wardrobe, styled smarter.</p>
+      <a class="btn" href="Assignment2/index.html">View Assignment #02</a>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 | WAD-CS324</footer>
 </body>
 </html>
